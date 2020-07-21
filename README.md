@@ -6,5 +6,12 @@ The following repository is a collection of my linux RICE builds. Which comes fr
 
 ## My Build
 
+- Manjaro
+- BSPWM
+- Polybar
+- Rofi
+- Atom
+- Firefox
+- 
 
 
