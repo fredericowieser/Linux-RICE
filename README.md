@@ -9,13 +9,39 @@ The following repository is a collection of my linux RICE builds. Which comes fr
 - Manjaro
 - BSPWM
 - Polybar
-- Rofi
-- Atom
-- Firefox
-- 
+
 
 ## Packages
 
 ### Vim
 
 A highly customisable text editor which has been used for decades and is an industry standard in computing.
+
+### Polybar
+
+When using polybar with bspwm one needs to add '$HOME/.config/polybar/launch.sh' into ~/.config/bspwm/bspwmrc
+
+It is also important to creates this "launch.sh" file so that one is able to launch the bar on boot. The contents of this file being...
+
+'''
+#!/bin/bash
+
+# Terminate already running bar instances
+killall -q polybar
+
+# Wait until the processes have been shut down
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+
+# Launch Polybar, using default config location ~/.config/polybar/config
+polybar mybar &
+
+echo "Polybar launched..."
+'''
+
+### Atom
+
+### Rofi
+
+### BSPWM
+
+
