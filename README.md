@@ -14,4 +14,8 @@ The following repository is a collection of my linux RICE builds. Which comes fr
 - Firefox
 - 
 
+## Packages
 
+### Vim
+
+A highly customisable text editor which has been used for decades and is an industry standard in computing.
