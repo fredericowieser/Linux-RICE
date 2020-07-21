@@ -19,11 +19,17 @@ A highly customisable text editor which has been used for decades and is an indu
 
 ### Polybar
 
-When using polybar with bspwm one needs to add '$HOME/.config/polybar/launch.sh' into ~/.config/bspwm/bspwmrc
+When using polybar with bspwm one needs to add 
+
+~~~
+$HOME/.config/polybar/launch.sh
+~~~
+
+into ~/.config/bspwm/bspwmrc
 
 It is also important to creates this "launch.sh" file so that one is able to launch the bar on boot. The contents of this file being...
 
-'''
+~~~
 #!/bin/bash
 
 # Terminate already running bar instances
@@ -36,7 +42,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 polybar mybar &
 
 echo "Polybar launched..."
-'''
+~~~
 
 ### Atom
 
